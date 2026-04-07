@@ -22,5 +22,105 @@ h1 {
 
 /* || body */
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+/* || the hole section */
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  max-width: 550px;
+}
+
+/* || Input Section */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+h1 {
+  margin-top: 33px;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* || input style */
+input {
+  max-width: 117px;
+  text-align: center;
+  font-size: 58px;
+  font-weight: 900;
+  margin-bottom: 26px;
+  border-radius: 5px;
+  border: 2px solid #b295ff;
+  background-color: #1f2937;
+  color: #fff;
+}
+
+/*
+Source - https://stackoverflow.com/a/4298216
+Posted by antonj, modified by community. See post 'Timeline' for change history
+Retrieved 2026-04-07, License - CC BY-SA 4.0
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.input-section button {
+  padding: 9px 27px;
+  color: #3d3d3d;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 33px;
+}
+
+.input-section button:hover {
+  cursor: pointer;
+  background-color: #f8edeb;
+}
+
+.input-section button:active {
+  background-color: #e8e8e4;
+}
+
+/* || output section */
+.output-section {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  padding: 36px 25px;
+  background-color: #f4f4f4;
+}
+
+.output-section > div {
+  min-width: 500px;
+  background-color: #fff;
+  padding-block: 31px 18px;
+  text-align: center;
+  border-radius: 5px;
+}
+.output-section > div h2 {
+  margin-bottom: 9px;
+  font-size: 20px;
+  color: #5a537b;
+}
+
+.output-section > div p {
+  color: #353535;
+  font-size: 14px;
 }
