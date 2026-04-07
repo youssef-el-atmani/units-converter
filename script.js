@@ -27,4 +27,7 @@ convertBtnEl.addEventListener("click", () => {
   const poundsToKilos = Number((unitValue / 2.204).toFixed(3));
   const massConversion = `${unitValue} kilos = ${kilosToPounds} pounds | ${unitValue} pounds = ${poundsToKilos} kilos`;
   massOutputEl.textContent = massConversion;
+
+  unitInputEl.value = "";
+  unitInputEl.focus();
 });
