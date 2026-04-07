@@ -1,0 +1,26 @@
+/* || Alternative box model */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* ||*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* override Normalize.css h1 margin */
+h1 {
+  margin: 0;
+}
+
+/* || body */
+body {
+  font-family: sans-serif;
+}
